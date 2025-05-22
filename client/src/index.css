@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', monospace;
+} */
+/* html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  overflow: hidden; 
+} */
+
+html, body {
+  background: rgba(0, 0, 0, 0.542); /* black translucent */
+}
+
+/* --- Cyber Blast Font --- */
+@font-face {
+  font-family: 'CyberBlast';
+  src: url('/fonts/cyber-blast/Cyber Blast.otf') format('opentype');
+}
+.cyberblast {
+  font-family: 'CyberBlast', sans-serif;
+}
+
+/* --- Deluxe Font (OTF + fallback TTF) --- */
+@font-face {
+  font-family: 'Deluxe';
+  src: url('/fonts/deluxe/Deluxe.otf') format('opentype'),
+       url('/fonts/deluxe/Deluxe.ttf') format('truetype');
+}
+.deluxe {
+  font-family: 'Deluxe', serif;
+}
+
+/* --- Kapiler Font (OTF + fallback TTF) --- */
+@font-face {
+  font-family: 'Kapiler';
+  src: url('/fonts/kapiler/Kapiler.otf') format('opentype'),
+       url('/fonts/kapiler/Kapiler.ttf') format('truetype');
+}
+.kapiler {
+  font-family: 'Kapiler', monospace;
+}
+
+/* --- SD Glitch Demo Font --- */
+@font-face {
+  font-family: 'GlitchDemo';
+  src: url('/fonts/sdglitchdemo/SDGlitch_Demo.ttf') format('truetype');
+}
+.glitch {
+  font-family: 'GlitchDemo', monospace;
+}

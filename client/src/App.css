@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.logo, .card, .read-the-docs {
+  display: none;
+}
