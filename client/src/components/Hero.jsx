@@ -4,18 +4,18 @@ import { FaCog } from 'react-icons/fa';
 
 export default function Hero() {
   return (
-    <div className="text-center px-4">
+    <div className="text-center px-4 ">
       {/* Animated heading with glitch and fade-in */}
-      <h1 className="text-7xl font-light cyberblast mb-4 mt-20 animate-fade-in">
+      <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl font-light cyberblast mb-4 mt-10 sm:mt-16 md:mt-20 animate-fade-in leading-tight">
         <span className="relative inline-block animate-glitch">
           Hi, I'm Omkumar Solanki <span className="inline-block animate-wiggle">👋</span>
         </span>
       </h1>
 
       {/* Animated paragraph with fade-in-up and 3D hover effect */}
-      <p className="text-green-600 glitch max-w-4xl text-3xl mx-auto mt-20 animate-fade-in-up">
-        <span className="text-green-300 italic inline-block animate-fade-in-left hover:animate-3d-pop cursor-pointer transition-transform duration-300">
-          MERN & iOS (SwiftUI + Storyboard) Developer with hands-on experience in AI Agent workflows, LLM fine - tuning, and RAG-based chatbot systems.
+      <p className="text-green-600 glitch max-w-4xl text-base sm:text-lg md:text-3xl lg:text-2xl xl:text-3xl mx-auto mt-20 animate-fade-in-up">
+        <span className="text-green-300 italic inline-block animate-fade-in-left hover:animate-3d-pop cursor-pointer transition-transform duration-300 text-base sm:text-lg md:text-3xl lg:text-2xl xl:text-3xl">
+          MERN & iOS (SwiftUI + Storyboard) Developer with hands-on experience in AI Agent workflows, LLM fine-tuning, and RAG-based chatbot systems.
           <br /><br />
         </span>
         <style>{`
@@ -37,20 +37,20 @@ export default function Hero() {
           }
         `}</style>
         Skilled in building scalable apps using&nbsp;
-        <span className="italic text-green-300 hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
+        <span className="italic text-green-300 text-base sm:text-lg md:text-3xl lg:text-2xl xl:text-3xl hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
           Docker, AWS, and CI/CD pipelines
         </span>.
         Currently learning&nbsp;
-        <span className="italic text-green-300 underline hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
+        <span className="italic text-green-300 underline text-base sm:text-lg md:text-3xl lg:text-2xl xl:text-3xl hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
           Web3
         </span>
        &nbsp;and&nbsp;
-        <span className="italic text-green-300 underline hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
+        <span className="italic text-green-300 underline text-base sm:text-lg md:text-3xl lg:text-2xl xl:text-3xl hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
           smart contract development
         </span>.
         <br /><br />
         Successfully delivered&nbsp;
-        <span className="text-green-200 kapiler font-extrabold text-2xl animate-pulse hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
+        <span className="text-green-200 kapiler font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl animate-pulse hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
            &nbsp;$8000+&nbsp;
         </span>
         in freelance projects with real&nbsp;AI+full-stack integrations.
@@ -101,7 +101,7 @@ export default function Hero() {
       {/* Centered button with pulse, glow, and shake */}
       <div className="flex justify-center mt-6 animate-fade-in-up delay-300">
         <button
-          className="px-6 py-2 border border-green-400 text-green-300 hover:border-green-500 hover:text-green-100 hover:shadow-lg hover:shadow-green-400/60 rounded-md text-xl font-bold kapiler transition-all duration-300 flex items-center justify-center gap-2 animate-pulse animate-glow hover:animate-shake active:animate-press-3d"
+          className="px-6 py-2 border border-green-400 text-green-300 hover:border-green-500 hover:text-green-100 hover:shadow-lg hover:shadow-green-400/60 rounded-md text-lg sm:text-xl md:text-2xl font-bold kapiler transition-all duration-300 flex items-center justify-center gap-2 animate-pulse animate-glow hover:animate-shake active:animate-press-3d"
           style={{ boxShadow: '0 0 16px 2px #22d3ee55' }}
         >
           View Projects <FaCog className="animate-spin-slow text-green-400" />
@@ -129,7 +129,7 @@ export default function Hero() {
         `}</style>
       </div>
       {/* Animated tech stack links */}
-      <div className="text-green-400 italic text-sm font-light max-w-4xl mx-auto tracking-wide flex flex-wrap justify-center gap-x-4 gap-y-2 mt-20 animate-fade-in-up delay-500">
+      <div className="text-green-400 italic text-xs sm:text-sm md:text-base lg:text-lg font-light max-w-4xl mx-auto tracking-wide flex flex-wrap justify-center gap-x-4 gap-y-2 mt-20 animate-fade-in-up delay-500">
         {[
           { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
           { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
