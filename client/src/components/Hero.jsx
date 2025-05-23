@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import { FaCog } from 'react-icons/fa';
+import Me from './Me';
 
 export default function Hero() {
   return (
@@ -11,6 +12,8 @@ export default function Hero() {
           Hi, I'm Omkumar Solanki <span className="inline-block animate-wiggle">👋</span>
         </span>
       </h1>
+              {/* Your Profile Card (just below Hero/your name) */}
+        <Me />
 
       {/* Animated paragraph with fade-in-up and 3D hover effect */}
       <p className="text-green-600 glitch max-w-4xl text-base sm:text-lg md:text-3xl lg:text-2xl xl:text-3xl mx-auto mt-20 animate-fade-in-up">
@@ -73,38 +76,38 @@ export default function Hero() {
           href="https://github.com/tcoders16?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-210 hover:rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow"
+          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-250 hover:rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow"
           title="GitHub"
         >
-          <FaGithub size={28} />
+          <FaGithub size={32} />
         </a>
         <a
           href="https://www.linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-210 hover:-rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow delay-100"
+          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-250 hover:-rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow delay-100"
           title="LinkedIn"
         >
-          <FaLinkedin size={28} />
+          <FaLinkedin size={32} />
         </a>
         <a
           href="https://x.com/ceo_hsd?s=21"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-210 hover:rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow delay-200"
+          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-250 hover:rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow delay-200"
           title="X (Twitter)"
         >
-          <FaXTwitter size={28} />
+          <FaXTwitter size={32} />
         </a>
       </div>
 
-      {/* Centered button with pulse, glow, and shake */}
+      {/* Centered button with pulse, glow, and shake PROJECT BUTTON*/}
       <div className="flex justify-center mt-6 animate-fade-in-up delay-300">
         <button
           className="px-6 py-2 border border-green-400 text-green-300 hover:border-green-500 hover:text-green-100 hover:shadow-lg hover:shadow-green-400/60 rounded-md text-lg sm:text-xl md:text-2xl font-bold kapiler transition-all duration-300 flex items-center justify-center gap-2 animate-pulse animate-glow hover:animate-shake active:animate-press-3d"
           style={{ boxShadow: '0 0 16px 2px #22d3ee55' }}
         >
-          View Projects <FaCog className="animate-spin-slow text-green-400" />
+          Projects <FaCog className="animate-spin-slow text-green-400" />
         </button>
         <style>{`
           @keyframes glow {
@@ -128,8 +131,45 @@ export default function Hero() {
           }
         `}</style>
       </div>
+
+    {/* Contact Me Button */}
+      <div className="flex justify-center mt-6 animate-fade-in-up delay-300">
+        <button
+          className="px-6 py-2 border border-green-400 text-green-300 hover:border-green-500 hover:text-green-100 hover:shadow-lg hover:shadow-green-400/60 rounded-md text-lg sm:text-xl md:text-2xl font-bold kapiler transition-all duration-300 flex items-center justify-center gap-2 animate-pulse animate-glow hover:animate-shake active:animate-press-3d"
+          style={{ boxShadow: '0 0 16px 2px #22d3ee55' }}
+        >
+          Contact Me <FaCog className="animate-spin-slow text-green-400" />
+        </button>
+        <style>{`
+          @keyframes glow {
+            0%, 100% { box-shadow: 0 0 16px 2px #22d3ee55; }
+            50% { box-shadow: 0 0 32px 8px #22d3eecc; }
+          }
+          .animate-glow { animation: glow 2s infinite alternate; }
+          @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-4px); }
+            40%, 80% { transform: translateX(4px); }
+          }
+          .hover\\:animate-shake:hover { animation: shake 0.4s; }
+          @keyframes press-3d {
+            0% { transform: perspective(400px) scale(1) rotateX(0deg);}
+            50% { transform: perspective(400px) scale(0.93) rotateX(12deg);}
+            100% { transform: perspective(400px) scale(1) rotateX(0deg);}
+          }
+          .active\\:animate-press-3d:active {
+            animation: press-3d 0.28s cubic-bezier(.4,0,.2,1);
+          }
+        `}</style>
+      </div>
+
+
+
+
+
+
       {/* Animated tech stack links */}
-      <div className="text-green-400 italic text-xs sm:text-sm md:text-base lg:text-lg font-light max-w-4xl mx-auto tracking-wide flex flex-wrap justify-center gap-x-4 gap-y-2 mt-20 animate-fade-in-up delay-500">
+      <div className="text-green-400 italic text-xs sm:text-md md:text-lg lg:text-md font-light max-w-4xl mx-auto tracking-wide flex flex-wrap justify-center gap-x-4 gap-y-2 mt-20 animate-fade-in-up delay-500">
         {[
           { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
           { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
