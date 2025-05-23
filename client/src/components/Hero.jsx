@@ -12,25 +12,68 @@ export default function Hero() {
         </span>
       </h1>
 
-      {/* Animated paragraph with fade-in-up */}
-      <p className="text-green-600 glitch max-w-2xl text-2xl mx-auto mt-20 animate-fade-in-up">
-        <span className="text-green-300 italic">
-          MERN & iOS (SwiftUI + Storyboard) Developer with hands-on experience in AI Agent workflows, LLM fine-tuning, and RAG-based chatbot systems.
+      {/* Animated paragraph with fade-in-up and 3D hover effect */}
+      <p className="text-green-600 glitch max-w-4xl text-3xl mx-auto mt-20 animate-fade-in-up">
+        <span className="text-green-300 italic inline-block animate-fade-in-left hover:animate-3d-pop cursor-pointer transition-transform duration-300">
+          MERN & iOS (SwiftUI + Storyboard) Developer with hands-on experience in AI Agent workflows, LLM fine - tuning, and RAG-based chatbot systems.
           <br /><br />
         </span>
-        Skilled in building scalable apps using <span className="italic text-green-300">Docker, AWS, and CI/CD pipelines</span>.
-        Currently learning <span className="italic text-green-300 underline">Web3</span> and <span className="italic text-green-300 underline">smart contract development</span>.
+        <style>{`
+          @keyframes fade-in-left {
+            from { opacity: 0; transform: translateX(-40px);}
+            to { opacity: 1; transform: translateX(0);}
+          }
+          .animate-fade-in-left {
+            animation: fade-in-left 1.2s cubic-bezier(.4,0,.2,1) both;
+          }
+          @keyframes pop3d {
+            0% { transform: scale(1) perspective(400px) rotateY(0deg);}
+            40% { transform: scale(1.07) perspective(400px) rotateY(8deg);}
+            60% { transform: scale(1.07) perspective(400px) rotateY(-8deg);}
+            100% { transform: scale(1) perspective(400px) rotateY(0deg);}
+          }
+          .hover\\:animate-3d-pop:hover {
+            animation: pop3d 0.7s cubic-bezier(.4,0,.2,1);
+          }
+        `}</style>
+        Skilled in building scalable apps using&nbsp;
+        <span className="italic text-green-300 hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
+          Docker, AWS, and CI/CD pipelines
+        </span>.
+        Currently learning&nbsp;
+        <span className="italic text-green-300 underline hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
+          Web3
+        </span>
+       &nbsp;and&nbsp;
+        <span className="italic text-green-300 underline hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
+          smart contract development
+        </span>.
         <br /><br />
-        Successfully delivered <span className="text-green-200 kapiler font-extrabold text-2xl animate-pulse">$8000+</span> in freelance projects with real AI + full-stack integrations.
+        Successfully delivered&nbsp;
+        <span className="text-green-200 kapiler font-extrabold text-2xl animate-pulse hover:animate-3d-tilt inline-block transition-transform duration-300 cursor-pointer">
+           &nbsp;$8000+&nbsp;
+        </span>
+        in freelance projects with real&nbsp;AI+full-stack integrations.
+        <style>{`
+          @keyframes tilt3d {
+            0% { transform: perspective(400px) rotateY(0deg) scale(1);}
+            30% { transform: perspective(400px) rotateY(8deg) scale(1.05);}
+            60% { transform: perspective(400px) rotateY(-8deg) scale(1.05);}
+            100% { transform: perspective(400px) rotateY(0deg) scale(1);}
+          }
+          .hover\\:animate-3d-tilt:hover {
+            animation: tilt3d 0.7s cubic-bezier(.4,0,.2,1);
+          }
+        `}</style>
       </p>
 
       {/* Social icons with bounce animation */}
       <div className="flex justify-center items-center gap-6 mt-8 animate-fade-in-up delay-200">
         <a
-          href="https://github.com/omkumarsolanki"
+          href="https://github.com/tcoders16?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-110 hover:rotate-3 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow"
+          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-210 hover:rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow"
           title="GitHub"
         >
           <FaGithub size={28} />
@@ -39,7 +82,7 @@ export default function Hero() {
           href="https://www.linkedin.com/in/omkumar-solanki-atluxuarywxtchbusinessmandeveloper2/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-110 hover:-rotate-3 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow delay-100"
+          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-210 hover:-rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow delay-100"
           title="LinkedIn"
         >
           <FaLinkedin size={28} />
@@ -48,20 +91,43 @@ export default function Hero() {
           href="https://x.com/ceo_hsd?s=21"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-110 hover:rotate-1 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow delay-200"
+          className="text-green-400 hover:text-green-300 transition-transform transform hover:scale-210 hover:rotate-20 p-3 border border-green-500 rounded-full shadow-lg hover:shadow-green-500/40 animate-bounce-slow delay-200"
           title="X (Twitter)"
         >
-          <FaXTwitter size={26} />
+          <FaXTwitter size={28} />
         </a>
       </div>
 
-      {/* Centered button with pulse and spin */}
+      {/* Centered button with pulse, glow, and shake */}
       <div className="flex justify-center mt-6 animate-fade-in-up delay-300">
-        <button className="px-6 py-2 border border-green-400 text-green-300 hover:border-green-500 hover:text-green-100 hover:shadow-md hover:shadow-green-500/40 rounded-md text-xl font-bold kapiler transition-all duration-300 flex items-center justify-center gap-2 animate-pulse">
+        <button
+          className="px-6 py-2 border border-green-400 text-green-300 hover:border-green-500 hover:text-green-100 hover:shadow-lg hover:shadow-green-400/60 rounded-md text-xl font-bold kapiler transition-all duration-300 flex items-center justify-center gap-2 animate-pulse animate-glow hover:animate-shake active:animate-press-3d"
+          style={{ boxShadow: '0 0 16px 2px #22d3ee55' }}
+        >
           View Projects <FaCog className="animate-spin-slow text-green-400" />
         </button>
+        <style>{`
+          @keyframes glow {
+            0%, 100% { box-shadow: 0 0 16px 2px #22d3ee55; }
+            50% { box-shadow: 0 0 32px 8px #22d3eecc; }
+          }
+          .animate-glow { animation: glow 2s infinite alternate; }
+          @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-4px); }
+            40%, 80% { transform: translateX(4px); }
+          }
+          .hover\\:animate-shake:hover { animation: shake 0.4s; }
+          @keyframes press-3d {
+            0% { transform: perspective(400px) scale(1) rotateX(0deg);}
+            50% { transform: perspective(400px) scale(0.93) rotateX(12deg);}
+            100% { transform: perspective(400px) scale(1) rotateX(0deg);}
+          }
+          .active\\:animate-press-3d:active {
+            animation: press-3d 0.28s cubic-bezier(.4,0,.2,1);
+          }
+        `}</style>
       </div>
-
       {/* Animated tech stack links */}
       <div className="text-green-400 italic text-sm font-light max-w-4xl mx-auto tracking-wide flex flex-wrap justify-center gap-x-4 gap-y-2 mt-20 animate-fade-in-up delay-500">
         {[
