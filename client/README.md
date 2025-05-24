@@ -1,9 +1,3 @@
-Absolutely! Here’s your README.md in perfect, professional Markdown formatting—
-ready for GitHub or any documentation site, with code blocks, lists, section breaks, and proper links.
-
-Copy-paste the following code as a full file:
-
-⸻
 
 
 # ⚡ Omkumar Solanki – Matrix-Style Developer Portfolio
@@ -118,22 +112,6 @@ Want to work together, or just say hi?
 
 ⸻
 
-Designed and developed by Omkumar Solanki – 2024
+Designed and developed by Omkumar Solanki – 2025
 Powered by React, Tailwind, Vercel, and a love for neon green.
 
----
-
-**Result:**  
-- Headings are consistent  
-- Section breaks with `---`  
-- Proper markdown code blocks  
-- Clickable links and badges  
-- Looks great on GitHub and documentation sites
-
-**You can copy-paste this directly as your `README.md` file!**
-
-Let me know if you want to add:  
-- Shields.io badges  
-- Animated GIF screenshot  
-- License/contributing section  
-- Or any more customization!
